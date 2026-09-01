@@ -1,7 +1,7 @@
 //! # FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee) — Rust Client SDK
 //!
 //! Official client for FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee) on RapidAPI.
-//! Obtain your API key at: <https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization>
+//! Obtain your API key at: <https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee>
 
 use reqwest::blocking::Client;
 use serde::{Deserialize, Serialize};
@@ -35,8 +35,8 @@ impl Default for RapidApiConfig {
     fn default() -> Self {
         Self {
             api_key: env::var("RAPIDAPI_KEY").unwrap_or_default(),
-            base_url: "https://us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com".to_string(),
-            rapidapi_host: "us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com".to_string(),
+            base_url: "https://fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com".to_string(),
+            rapidapi_host: "fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com".to_string(),
         }
     }
 }
