@@ -1,0 +1,18 @@
+[package]
+name = "pharma-dscsa-client"
+version = "1.0.0"
+edition = "2021"
+description = "Official high-speed Rust client for FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee) via RapidAPI Hub"
+readme = "README.md"
+authors = ["Noor Mkdad <https://github.com/DrMkdaddy>"]
+license = "MIT"
+repository = "https://github.com/DrMkdaddy/pharma-dscsa-rust"
+homepage = "https://noormkdad.com/tools/pharma-dscsa"
+documentation = "https://noormkdad.com/tools/pharma-dscsa"
+keywords = ["fda-dscsa","eu-fmd","serialization","epcis","pharma"]
+categories = ["api-bindings", "web-programming::http-client"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls-native-roots", "blocking"] }

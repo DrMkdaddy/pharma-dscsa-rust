@@ -1,0 +1,1 @@
+/home/noorm/projects/api-worker/sdks/crates/pharma-dscsa/target/debug/libpharma_dscsa_client.rlib: /home/noorm/projects/api-worker/sdks/crates/pharma-dscsa/target/package/pharma-dscsa-client-1.0.0/src/lib.rs
